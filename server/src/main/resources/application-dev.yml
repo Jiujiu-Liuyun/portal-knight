@@ -4,4 +4,4 @@ uploadserver:
   path: /Users/zhangyun/test/target
 
 server:
-  port: 8081
+  port: 8080

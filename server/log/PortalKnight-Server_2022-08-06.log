@@ -1,0 +1,56 @@
+2022-08-06 23:30:54.047 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Starting ServerApplication using Java 1.8.0_342 on zhangyundeMacBook-Air.local with PID 7048 (/Users/zhangyun/Documents/javaProject/portal-knight/server/target/classes started by zhangyun in /Users/zhangyun/Documents/javaProject/portal-knight)
+2022-08-06 23:30:54.049 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - The following 1 profile is active: "dev"
+2022-08-06 23:30:54.552 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-08-06 23:30:54.556 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-06 23:30:54.557 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-06 23:30:54.609 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-06 23:30:54.609 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 542 ms
+2022-08-06 23:30:54.791 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-06 23:30:54.894 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-06 23:30:54.894 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-08-06 23:30:54.900 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-08-06 23:30:54.953 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-08-06 23:30:54.963 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Started ServerApplication in 1.128 seconds (JVM running for 1.526)
+2022-08-06 23:30:54.964 [pool-1-thread-1] INFO  com.zhangyun.portalknight.server.upload.Server - 服务端启动。。。
+2022-08-06 23:30:54.964 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - 服务启动成功！
+2022-08-06 23:30:59.802 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-06 23:30:59.802 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-06 23:30:59.803 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-08-06 23:32:43.266 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Starting ServerApplication using Java 1.8.0_342 on zhangyundeMacBook-Air.local with PID 7066 (/Users/zhangyun/Documents/javaProject/portal-knight/server/target/classes started by zhangyun in /Users/zhangyun/Documents/javaProject/portal-knight)
+2022-08-06 23:32:43.267 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - The following 1 profile is active: "dev"
+2022-08-06 23:32:43.731 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-08-06 23:32:43.735 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-06 23:32:43.735 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-06 23:32:43.770 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-06 23:32:43.770 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 485 ms
+2022-08-06 23:32:43.925 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-06 23:32:44.025 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-06 23:32:44.026 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-08-06 23:32:44.059 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-08-06 23:32:44.069 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-08-06 23:32:44.101 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Started ServerApplication in 1.076 seconds (JVM running for 1.316)
+2022-08-06 23:32:44.102 [pool-1-thread-1] INFO  com.zhangyun.portalknight.server.upload.Server - 服务端启动。。。
+2022-08-06 23:32:44.103 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - 服务启动成功！
+2022-08-06 23:32:48.106 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-06 23:32:48.107 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-06 23:32:48.108 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-08-06 23:33:35.294 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Starting ServerApplication using Java 1.8.0_342 on zhangyundeMacBook-Air.local with PID 7078 (/Users/zhangyun/Documents/javaProject/portal-knight/server/target/classes started by zhangyun in /Users/zhangyun/Documents/javaProject/portal-knight)
+2022-08-06 23:33:35.296 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - The following 1 profile is active: "dev"
+2022-08-06 23:33:35.751 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-08-06 23:33:35.755 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-06 23:33:35.755 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-06 23:33:35.798 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-06 23:33:35.798 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 484 ms
+2022-08-06 23:33:35.949 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-06 23:33:36.088 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-06 23:33:36.089 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-08-06 23:33:36.094 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-08-06 23:33:36.103 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-08-06 23:33:36.127 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Started ServerApplication in 1.105 seconds (JVM running for 1.528)
+2022-08-06 23:33:36.128 [pool-1-thread-1] INFO  com.zhangyun.portalknight.server.upload.Server - 服务端启动。。。
+2022-08-06 23:33:36.128 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - 服务启动成功！
+2022-08-06 23:33:40.524 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-06 23:33:40.525 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-06 23:33:40.526 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-08-06 23:34:06.795 [http-nio-8080-exec-8] INFO  c.z.portalknight.server.controller.ControllerTest - test controller
+2022-08-06 23:34:23.051 [http-nio-8080-exec-10] INFO  c.z.portalknight.server.controller.ControllerTest - test controller
