@@ -1,0 +1,9 @@
+logging:
+  level:
+    com.zhangyun.portalknight.server: info
+  config: classpath:logback-spring.xml
+
+spring:
+  profiles:
+    active: dev
+

@@ -1,0 +1,7 @@
+uploadserver:
+  host: localhost
+  port: 8082
+  path: /root/test
+
+server:
+  port: 8081

@@ -1,0 +1,10 @@
+server:
+  port: 8082
+
+uploadserver:
+  host: 175.178.33.41
+  port: 8082
+
+uploadclient:
+  path: /Users/zhangyun/test/source
+  maxsize: 10

@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+
+logging:
+  level:
+    com.zhangyun.portalknight.client: info
+  config: classpath:logback-spring.xml
+
+uploadclient:
+  interval: 10000

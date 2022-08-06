@@ -1,0 +1,7 @@
+uploadserver:
+  host: localhost
+  port: 8082
+  path: /Users/zhangyun/test/target
+
+server:
+  port: 8081
