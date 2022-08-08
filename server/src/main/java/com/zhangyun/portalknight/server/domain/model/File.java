@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
+
+import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -49,11 +51,11 @@ public class File extends Model {
 
     @ApiModelProperty(value = "创建时间")
     @TableField(fill = FieldFill.INSERT)
-    private LocalDateTime createTime;
+    private Timestamp createTime;
 
     @ApiModelProperty(value = "修改时间")
     @TableField(fill = FieldFill.INSERT_UPDATE)
-    private LocalDateTime modifiedTime;
+    private Timestamp modifiedTime;
 
 
 }

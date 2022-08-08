@@ -16,5 +16,7 @@ public class DeviceReq {
 
     private String deviceDesc;
 
-    private Integer isOnline;
+    private Boolean isOnline;
+
+    private String token;
 }

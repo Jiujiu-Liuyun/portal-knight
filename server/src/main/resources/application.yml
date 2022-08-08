@@ -18,6 +18,9 @@ server:
 uploadserver:
   port: 8082
 
+sso:
+  expiretime: 7
+
 redis:
   user:
     session:

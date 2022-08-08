@@ -2,6 +2,9 @@ package com.zhangyun.portalknight.server.domain.response;
 
 import lombok.Data;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * description:
  *
@@ -16,7 +19,7 @@ public class Response {
 
     private String msg;
 
-    private Object data;
+    private Map<String, Object> data;
 
     private Response() {
 
@@ -31,7 +34,7 @@ public class Response {
         this.msg = msg;
     }
 
-    private Response(Integer code, String msg, Object data) {
+    private Response(Integer code, String msg, Map<String, Object> data) {
         this.code = code;
         this.msg = msg;
         this.data = data;
@@ -49,7 +52,13 @@ public class Response {
         return new Response(code, msg);
     }
 
-    public static Response ok(Integer code, String msg, Object data) {
+    public static Response ok(Integer code, String msg, Map<String, Object> data) {
+        return new Response(code, msg, data);
+    }
+
+    public static Response ok(Integer code, String msg, String key, Object value) {
+        Map<String, Object> data = new HashMap<>();
+        data.put(key, value);
         return new Response(code, msg, data);
     }
 

@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 /**
  * description:
@@ -30,6 +31,9 @@ public class AuthService {
 
     @Value("${redis.user.session.key}")
     private String REDIS_SESSION_KEY;
+
+    @Value("${sso.expiretime}")
+    private long EXPIRE_TIME;
 
     @Autowired
     private CacheService cacheService;
@@ -53,15 +57,18 @@ public class AuthService {
         User user = userService.findUserByEmail(req.getEmail());
         if (ObjectUtil.equal(user.getUsername(), req.getUsername())
                 && ObjectUtil.equal(user.getPassword(), pw)) {
+            // 生成token
             UUID token = UUID.randomUUID();
             user.setPassword(null);
-            cacheService.set(REDIS_SESSION_KEY + ":" + token,
-                    user);
+            // 将token插入缓存
+            cacheService.set(REDIS_SESSION_KEY + ":" + token, user,
+                    EXPIRE_TIME, TimeUnit.DAYS);
             // device库更新
             DeviceReq deviceReq = deviceConvert.loginReqToDeviceReq(req);
-            deviceReq.setIsOnline(1);
+            deviceReq.setIsOnline(true);
+            deviceReq.setToken(token.toString());
             deviceService.updataStatus(deviceReq);
-            return Response.ok(200, "登录成功", token);
+            return Response.ok(200, "登录成功", "token", token);
         } else {
             log.info("登录失败: {}", req);
             return Response.fail("登录失败");

@@ -15,14 +15,15 @@ select * from `user`;
 
 DROP TABLE IF EXISTS `device`;
 CREATE TABLE `device` (
-   `userid` int NOT NULL PRIMARY KEY AUTO_INCREMENT COMMENT '用户id',
-   `deviceid` varchar(36) NOT NULL unique COMMENT '设备id',
+   `device_id` varchar(36) PRIMARY KEY COMMENT '设备id',
+   `userid` int NOT NULL COMMENT '用户id',
    `device_desc` varchar(50) COMMENT '设备描述信息',
-   `is_online` tinyint NOT NULL COMMENT '是否在线',
+   `is_online` boolean NOT NULL COMMENT '是否在线',
+   `token` varchar(36) COMMENT 'token',
    `create_time` datetime COMMENT '创建时间',
    `modified_time` datetime COMMENT '修改时间'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-select * from `user`;
+select * from `device`;
 
 DROP TABLE IF EXISTS `file`;
 CREATE TABLE `file` (
@@ -35,6 +36,6 @@ CREATE TABLE `file` (
    `create_time` datetime COMMENT '创建时间',
    `modified_time` datetime COMMENT '修改时间'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-select * from `user`;
+select * from `file`;
 
 

@@ -1,10 +1,8 @@
 package com.zhangyun.portalknight.server.domain.convert;
 
 import com.zhangyun.portalknight.server.domain.model.Device;
-import com.zhangyun.portalknight.server.domain.model.User;
 import com.zhangyun.portalknight.server.domain.req.DeviceReq;
 import com.zhangyun.portalknight.server.domain.req.LoginReq;
-import com.zhangyun.portalknight.server.domain.req.UserReq;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
