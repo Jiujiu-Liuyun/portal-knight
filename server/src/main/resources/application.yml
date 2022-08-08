@@ -4,8 +4,22 @@ logging:
   config: classpath:logback-spring.xml
 
 spring:
+  application:
+    name: portal-knight
   profiles:
     active: dev
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+
+server:
+  port: 8080
+
+uploadserver:
+  port: 8082
+
+redis:
+  user:
+    session:
+      key: USER_SESSION_KEY
+

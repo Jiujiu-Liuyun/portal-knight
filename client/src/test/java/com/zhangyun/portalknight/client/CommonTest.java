@@ -71,7 +71,7 @@ public class CommonTest {
     }
 
     @Test
-    public void gen1GFile() throws IOException {
+    public void gen1MFile() throws IOException {
         File file = new File("/Users/zhangyun/test/source/txt");
         RandomAccessFile randomAccessFile = new RandomAccessFile(file, "rw");
         randomAccessFile.seek(0);

@@ -1,9 +1,14 @@
 package com.zhangyun.portalknight.server;
 
+import cn.hutool.core.lang.UUID;
+import com.alibaba.fastjson.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -35,5 +40,29 @@ public class CommonTest {
         log.info("{}", target.resolve(source.relativize(path)));
     }
 
+    @Test
+    public void jsonTest() {
+        log.info("{}", JSONObject.toJSONString("name"));
+        log.info("{}", "name");
+    }
+
+    @Test
+    public void uuidTest() {
+        UUID uuid = UUID.randomUUID();
+        log.info("{}", uuid.toString().length());
+    }
+
+    @Test
+    public void userDirTest() {
+        System.out.println(System.getProperty("user.dir"));
+    }
+
+    @Test
+    public void createDir() {
+        File file = new File("/Users/zhangyun/test/source/test");
+        if (file.mkdir()) {
+            log.info("success");
+        }
+    }
 
 }

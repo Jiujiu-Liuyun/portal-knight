@@ -1,6 +1,5 @@
 uploadserver:
   host: localhost
-  port: 8082
 
 uploadclient:
   path: /Users/zhangyun/test/source

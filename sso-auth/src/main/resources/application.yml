@@ -1,0 +1,5 @@
+server:
+  port: 8083
+
+REDIS_USER_SESSION_KEY: USER_SESSION
+

@@ -9,3 +9,6 @@ logging:
 
 uploadclient:
   interval: 10000
+
+uploadserver:
+  port: 8082
