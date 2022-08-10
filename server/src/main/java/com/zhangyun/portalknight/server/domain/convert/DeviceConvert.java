@@ -20,6 +20,4 @@ public interface DeviceConvert {
     DeviceReq deviceToDeviceReq(Device device);
 
     Device deviceReqToDevice(DeviceReq deviceReq);
-
-    DeviceReq loginReqToDeviceReq(LoginReq loginReq);
 }

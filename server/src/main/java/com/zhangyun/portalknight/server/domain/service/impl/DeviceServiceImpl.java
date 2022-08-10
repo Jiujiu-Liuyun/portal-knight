@@ -15,7 +15,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.UUID;
 
 /**
@@ -55,26 +54,27 @@ public class DeviceServiceImpl extends ServiceImpl<DeviceMapper, Device> impleme
             return Response.fail(400, "设备初始化失败");
         } else {
             log.info("设备初始化成功: {}", req);
-            return Response.ok(200, "设备初始化成功", "deviceid", uuid);
+            return Response.ok(200, "设备初始化成功", "deviceId", uuid);
         }
     }
 
     @Override
-    public Response isOnline(String deviceid) {
+    public Response isOnline(String deviceId) {
         QueryWrapper<Device> wrapper = new QueryWrapper<>();
-        wrapper.eq("deviceid", deviceid);
+        wrapper.eq("deviceId", deviceId);
         Device device = deviceMapper.selectOne(wrapper);
         if (ObjectUtil.equal(device.getIsOnline(), 1)) {
-            log.info("getStatusByDeviceId, 设备在线: {}", deviceid);
+            log.info("getStatusByDeviceId, 设备在线: {}", deviceId);
             return Response.ok(200, "设备在线", "token", device.getToken());
         } else {
-            log.info("getStatusByDeviceId, 设备不在线: {}", deviceid);
+            log.info("getStatusByDeviceId, 设备不在线: {}", deviceId);
             return Response.ok(200, "设备不在线", "isOnline", false);
         }
     }
 
     @Override
     public Response updataStatus(DeviceReq req) {
+        log.info("更新设备状态: {}", req);
         Device device = deviceConvert.deviceReqToDevice(req);
         int result = deviceMapper.updateById(device);
         if (result <= 0) {
@@ -84,5 +84,11 @@ public class DeviceServiceImpl extends ServiceImpl<DeviceMapper, Device> impleme
             log.info("更新成功: {}", req);
             return Response.ok();
         }
+    }
+
+    @Override
+    public Response getDeviceById(String deviceId) {
+        Device device = deviceMapper.selectById(deviceId);
+        return Response.ok(200, "ok", "device", device);
     }
 }

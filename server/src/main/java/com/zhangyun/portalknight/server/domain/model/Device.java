@@ -1,13 +1,12 @@
 package com.zhangyun.portalknight.server.domain.model;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
 
 import java.sql.Timestamp;
-import java.time.LocalDateTime;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -30,12 +29,12 @@ public class Device extends Model {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "用户id")
-    @TableId(value = "userid")
-    private Integer userid;
-
     @ApiModelProperty(value = "设备id")
+    @TableId(value = "device_id")
     private String deviceId;
+
+    @ApiModelProperty(value = "用户id")
+    private Integer userid;
 
     @ApiModelProperty(value = "设备描述信息")
     private String deviceDesc;

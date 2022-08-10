@@ -17,7 +17,9 @@ import com.zhangyun.portalknight.server.domain.response.Response;
 public interface IDeviceService extends IService<Device> {
     public Response deviceInit(DeviceInitReq req);
 
-    public Response isOnline(String deviceid);
+    public Response isOnline(String deviceId);
 
     public Response updataStatus(DeviceReq req);
+
+    public Response getDeviceById(String deviceId);
 }

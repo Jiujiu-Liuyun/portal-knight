@@ -1,9 +1,8 @@
 package com.zhangyun.portalknight.server.controller;
 
-import com.zhangyun.portalknight.server.domain.model.User;
 import com.zhangyun.portalknight.server.domain.req.LoginReq;
+import com.zhangyun.portalknight.server.domain.req.LogoutReq;
 import com.zhangyun.portalknight.server.domain.response.Response;
-import com.zhangyun.portalknight.server.domain.service.IUserService;
 import com.zhangyun.portalknight.server.service.AuthService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -12,8 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * description:
@@ -26,7 +23,7 @@ import java.util.List;
 @RequestMapping("/login")
 @Api("登录接口")
 @Slf4j
-public class LoginController {
+public class AuthController {
 
     @Autowired
     private AuthService authService;
@@ -37,5 +34,13 @@ public class LoginController {
         log.info("设备登录: {}", req);
         return authService.login(req);
     }
+
+    @ApiOperation("logout")
+    @GetMapping("/logout")
+    public Response logout(LogoutReq req){
+        log.info("设备登出: {}", req);
+        return authService.logout(req);
+    }
+
 
 }

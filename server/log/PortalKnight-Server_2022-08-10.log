@@ -1,0 +1,123 @@
+2022-08-10 00:05:46.855 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Starting ServerApplication using Java 1.8.0_342 on zhangyundeAir.lan with PID 98147 (/Users/zhangyun/Documents/javaProject/portal-knight/server/target/classes started by zhangyun in /Users/zhangyun/Documents/javaProject/portal-knight)
+2022-08-10 00:05:46.856 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - The following 1 profile is active: "dev"
+2022-08-10 00:05:47.255 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-08-10 00:05:47.256 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-10 00:05:47.265 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2022-08-10 00:05:47.495 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-08-10 00:05:47.500 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-10 00:05:47.500 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-10 00:05:47.544 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-10 00:05:47.544 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 668 ms
+2022-08-10 00:05:48.693 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-10 00:05:49.008 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-10 00:05:49.008 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-08-10 00:05:49.016 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-08-10 00:05:49.028 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-08-10 00:05:49.089 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Started ServerApplication in 2.456 seconds (JVM running for 2.696)
+2022-08-10 00:05:49.090 [pool-1-thread-1] INFO  com.zhangyun.portalknight.server.upload.Server - 服务端启动。。。
+2022-08-10 00:05:49.090 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - 服务启动成功！
+2022-08-10 00:05:52.694 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-10 00:05:52.694 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-10 00:05:52.696 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-08-10 00:05:52.720 [http-nio-8080-exec-1] INFO  c.z.portalknight.server.controller.LoginController - 设备登录: LoginReq(username=zhangyun, password=1120, email=2604493210@qq.com, deviceId=27d5263e-099e-40f7-af1f-34e4f040917e)
+2022-08-10 00:05:52.720 [http-nio-8080-exec-1] INFO  c.zhangyun.portalknight.server.service.AuthService - login: LoginReq(username=zhangyun, password=1120, email=2604493210@qq.com, deviceId=27d5263e-099e-40f7-af1f-34e4f040917e)
+2022-08-10 00:05:52.730 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-08-10 00:05:52.781 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-08-10 00:05:53.051 [http-nio-8080-exec-1] INFO  c.zhangyun.portalknight.server.service.AuthService - **** LoginReq(username=zhangyun, password=1120, email=2604493210@qq.com, deviceId=27d5263e-099e-40f7-af1f-34e4f040917e)
+2022-08-10 00:05:53.051 [http-nio-8080-exec-1] INFO  c.zhangyun.portalknight.server.service.AuthService - **** DeviceReq(deviceId=null, deviceDesc=null, isOnline=null, token=null)
+2022-08-10 00:05:53.052 [http-nio-8080-exec-1] INFO  c.z.p.server.domain.service.impl.DeviceServiceImpl - 更新设备状态: DeviceReq(deviceId=null, deviceDesc=null, isOnline=true, token=0c86ba09-5944-4e7b-b3c0-e8d98477ca77)
+2022-08-10 00:05:53.053 [http-nio-8080-exec-1] INFO  c.z.p.server.handler.MyMetaObjectHandler - update org.apache.ibatis.reflection.MetaObject@1a8e5c0e, current: 2022-08-10 00:05:53.053
+2022-08-10 00:05:53.055 [http-nio-8080-exec-1] ERROR c.z.p.server.domain.service.impl.DeviceServiceImpl - 更新失败: DeviceReq(deviceId=null, deviceDesc=null, isOnline=true, token=0c86ba09-5944-4e7b-b3c0-e8d98477ca77)
+2022-08-10 00:09:19.251 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-08-10 00:09:19.255 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-08-10 00:09:22.267 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Starting ServerApplication using Java 1.8.0_342 on zhangyundeAir.lan with PID 98860 (/Users/zhangyun/Documents/javaProject/portal-knight/server/target/classes started by zhangyun in /Users/zhangyun/Documents/javaProject/portal-knight)
+2022-08-10 00:09:22.269 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - The following 1 profile is active: "dev"
+2022-08-10 00:09:22.750 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-08-10 00:09:22.751 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-10 00:09:22.765 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2022-08-10 00:09:22.993 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-08-10 00:09:22.998 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-10 00:09:22.998 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-10 00:09:23.038 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-10 00:09:23.039 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 718 ms
+2022-08-10 00:09:23.915 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-10 00:09:24.231 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-10 00:09:24.232 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-08-10 00:09:24.238 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-08-10 00:09:24.250 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-08-10 00:09:24.311 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Started ServerApplication in 2.352 seconds (JVM running for 2.603)
+2022-08-10 00:09:24.313 [pool-1-thread-1] INFO  com.zhangyun.portalknight.server.upload.Server - 服务端启动。。。
+2022-08-10 00:09:24.313 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - 服务启动成功！
+2022-08-10 00:09:29.967 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-10 00:09:29.967 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-10 00:09:29.969 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-08-10 00:09:29.992 [http-nio-8080-exec-1] INFO  c.z.portalknight.server.controller.LoginController - 设备登录: LoginReq(username=zhangyun, password=1120, email=2604493210@qq.com, deviceId=27d5263e-099e-40f7-af1f-34e4f040917e)
+2022-08-10 00:09:29.992 [http-nio-8080-exec-1] INFO  c.zhangyun.portalknight.server.service.AuthService - login: LoginReq(username=zhangyun, password=1120, email=2604493210@qq.com, deviceId=27d5263e-099e-40f7-af1f-34e4f040917e)
+2022-08-10 00:09:30.003 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-08-10 00:09:30.052 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-08-10 00:09:30.318 [http-nio-8080-exec-1] INFO  c.z.p.server.domain.service.impl.DeviceServiceImpl - 更新设备状态: DeviceReq(deviceId=27d5263e-099e-40f7-af1f-34e4f040917e, deviceDesc=null, isOnline=true, token=2e1c36e8-bccb-4273-84ad-e690fc140c08)
+2022-08-10 00:09:30.319 [http-nio-8080-exec-1] INFO  c.z.p.server.handler.MyMetaObjectHandler - update org.apache.ibatis.reflection.MetaObject@2cd513d5, current: 2022-08-10 00:09:30.319
+2022-08-10 00:09:30.323 [http-nio-8080-exec-1] INFO  c.z.p.server.domain.service.impl.DeviceServiceImpl - 更新成功: DeviceReq(deviceId=27d5263e-099e-40f7-af1f-34e4f040917e, deviceDesc=null, isOnline=true, token=2e1c36e8-bccb-4273-84ad-e690fc140c08)
+2022-08-10 00:11:03.268 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-08-10 00:11:03.273 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-08-10 00:11:06.030 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Starting ServerApplication using Java 1.8.0_342 on zhangyundeAir.lan with PID 99226 (/Users/zhangyun/Documents/javaProject/portal-knight/server/target/classes started by zhangyun in /Users/zhangyun/Documents/javaProject/portal-knight)
+2022-08-10 00:11:06.032 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - The following 1 profile is active: "dev"
+2022-08-10 00:11:06.435 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-08-10 00:11:06.435 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-10 00:11:06.446 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2022-08-10 00:11:06.673 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-08-10 00:11:06.677 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-10 00:11:06.677 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-10 00:11:06.719 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-10 00:11:06.719 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 661 ms
+2022-08-10 00:11:07.852 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-10 00:11:08.172 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-10 00:11:08.173 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-08-10 00:11:08.180 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-08-10 00:11:08.191 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-08-10 00:11:08.253 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Started ServerApplication in 2.483 seconds (JVM running for 2.735)
+2022-08-10 00:11:08.255 [pool-1-thread-1] INFO  com.zhangyun.portalknight.server.upload.Server - 服务端启动。。。
+2022-08-10 00:11:08.255 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - 服务启动成功！
+2022-08-10 00:11:20.664 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-10 00:11:20.664 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-10 00:11:20.666 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-08-10 00:11:45.958 [http-nio-8080-exec-8] INFO  c.z.portalknight.server.controller.AuthController - 设备登出: LogoutReq(username=zhangyun, password=1120, email=2604493210@qq.com, deviceId=27d5263e-099e-40f7-af1f-34e4f040917e)
+2022-08-10 00:11:45.958 [http-nio-8080-exec-8] INFO  c.zhangyun.portalknight.server.service.AuthService - logout: LogoutReq(username=zhangyun, password=1120, email=2604493210@qq.com, deviceId=27d5263e-099e-40f7-af1f-34e4f040917e)
+2022-08-10 00:11:45.985 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-08-10 00:11:46.116 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-08-10 00:11:46.261 [http-nio-8080-exec-8] INFO  c.z.p.server.domain.service.impl.DeviceServiceImpl - 更新设备状态: DeviceReq(deviceId=27d5263e-099e-40f7-af1f-34e4f040917e, deviceDesc=设备1, isOnline=true, token=2e1c36e8-bccb-4273-84ad-e690fc140c08)
+2022-08-10 00:11:46.269 [http-nio-8080-exec-8] INFO  c.z.p.server.handler.MyMetaObjectHandler - update org.apache.ibatis.reflection.MetaObject@b6f2453, current: 2022-08-10 00:11:46.269
+2022-08-10 00:11:46.270 [http-nio-8080-exec-8] INFO  c.z.p.server.domain.service.impl.DeviceServiceImpl - 更新成功: DeviceReq(deviceId=27d5263e-099e-40f7-af1f-34e4f040917e, deviceDesc=设备1, isOnline=true, token=2e1c36e8-bccb-4273-84ad-e690fc140c08)
+2022-08-10 00:17:00.485 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-08-10 00:17:00.489 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-08-10 00:17:03.202 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Starting ServerApplication using Java 1.8.0_342 on zhangyundeAir.lan with PID 832 (/Users/zhangyun/Documents/javaProject/portal-knight/server/target/classes started by zhangyun in /Users/zhangyun/Documents/javaProject/portal-knight)
+2022-08-10 00:17:03.204 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - The following 1 profile is active: "dev"
+2022-08-10 00:17:03.589 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2022-08-10 00:17:03.590 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-08-10 00:17:03.600 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2022-08-10 00:17:03.830 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-08-10 00:17:03.835 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-08-10 00:17:03.835 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-10 00:17:03.877 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-08-10 00:17:03.877 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 652 ms
+2022-08-10 00:17:05.020 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-10 00:17:05.326 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-08-10 00:17:05.327 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-08-10 00:17:05.334 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-08-10 00:17:05.345 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-08-10 00:17:05.408 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - Started ServerApplication in 2.436 seconds (JVM running for 2.688)
+2022-08-10 00:17:05.410 [pool-1-thread-1] INFO  com.zhangyun.portalknight.server.upload.Server - 服务端启动。。。
+2022-08-10 00:17:05.410 [main] INFO  com.zhangyun.portalknight.server.ServerApplication - 服务启动成功！
+2022-08-10 00:17:07.635 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-10 00:17:07.636 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-08-10 00:17:07.637 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-08-10 00:17:07.658 [http-nio-8080-exec-1] INFO  c.z.portalknight.server.controller.AuthController - 设备登出: LogoutReq(username=zhangyun, password=1120, email=2604493210@qq.com, deviceId=27d5263e-099e-40f7-af1f-34e4f040917e)
+2022-08-10 00:17:07.659 [http-nio-8080-exec-1] INFO  c.zhangyun.portalknight.server.service.AuthService - logout: LogoutReq(username=zhangyun, password=1120, email=2604493210@qq.com, deviceId=27d5263e-099e-40f7-af1f-34e4f040917e)
+2022-08-10 00:17:07.669 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-08-10 00:17:07.717 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-08-10 00:17:07.827 [http-nio-8080-exec-1] INFO  c.zhangyun.portalknight.server.service.AuthService - 删除缓存token, key: USER_SESSION_KEY:2e1c36e8-bccb-4273-84ad-e690fc140c08
+2022-08-10 00:17:07.954 [http-nio-8080-exec-1] INFO  c.z.p.server.domain.service.impl.DeviceServiceImpl - 更新设备状态: DeviceReq(deviceId=27d5263e-099e-40f7-af1f-34e4f040917e, deviceDesc=设备1, isOnline=false, token=2e1c36e8-bccb-4273-84ad-e690fc140c08)
+2022-08-10 00:17:07.962 [http-nio-8080-exec-1] INFO  c.z.p.server.handler.MyMetaObjectHandler - update org.apache.ibatis.reflection.MetaObject@638bd5c7, current: 2022-08-10 00:17:07.962
+2022-08-10 00:17:07.966 [http-nio-8080-exec-1] INFO  c.z.p.server.domain.service.impl.DeviceServiceImpl - 更新成功: DeviceReq(deviceId=27d5263e-099e-40f7-af1f-34e4f040917e, deviceDesc=设备1, isOnline=false, token=2e1c36e8-bccb-4273-84ad-e690fc140c08)
+2022-08-10 00:17:50.663 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-08-10 00:17:50.667 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

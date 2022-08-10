@@ -10,7 +10,7 @@ import lombok.Data;
  * @since: 1.0
  */
 @Data
-public class LoginReq {
+public class LogoutReq {
 
     private String username;
 
@@ -19,4 +19,6 @@ public class LoginReq {
     private String email;
 
     private String deviceId;
+
+//    private String token;
 }

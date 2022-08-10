@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 public class DeviceReq {
 
-    private String deviceid;
+    private String deviceId;
 
     private String deviceDesc;
 
